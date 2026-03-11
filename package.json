@@ -3,18 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "cd frontend && npm run dev -- --host 0.0.0.0",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview -- --host 0.0.0.0",
+    "install:frontend": "cd frontend && npm install"
   },
-
   "engines": {
     "node": "20.x"
-  },
-
-  "devDependencies": {
-    "vite": "^5.0.0"
   }
 }
